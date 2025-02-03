@@ -30,6 +30,9 @@ body {
   .btn_dark_green_outline  { 
     @apply border-gray-20 bg-green-90 px-8 py-5 text-white
   }
+  .btn_dark_gray {
+    @apply border-black bg-white px-2 py-2 text-white hover:bg-gray-20
+  }
   
   .max-container {
     @apply mx-auto max-w-[1440px];
