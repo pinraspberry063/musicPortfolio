@@ -19,17 +19,17 @@ const NavBar = () => {
     }
     
   return (
-    <>
+    <div className='flex flex-row w-full absolute px-20'>
         
-        <nav className='flexBetween max-container padding-container relative z-30 py-3 '>
+        <nav className='flex items-center justify-between w-full'>
             
             <Link href="/">
-                <Image src="/jc-guitar-2.png" alt="logo" width={200} height={75}/>
+                <Image src="/JC-Guitar-Logo.png" alt="logo" width={200} height={75}/>
                 
             </Link>
-            <ul className='hidden h-full gap-12 lg:flex'>
+            <ul className=' hidden h-full gap-12 lg:flex'>
                     {NAV_BAR_LINKS.map((link) => (
-                        <Link href={link.href} key={link.key} className='regular-16 text-gray-50 flexCenter 
+                        <Link href={link.href} key={link.key} className='text-4xl text-white flexCenter 
                         cursor-pointer pb-1.5 transition-all hover:font-bold py-10'>
                             {link.label}
                         </Link>
@@ -41,7 +41,8 @@ const NavBar = () => {
                     type='button'
                     title='spotify'
                     icon='/spotify.png'
-                    variant='btn_dark_gray'
+                    animatedIcon='/spot_gray.gif'
+                    variant='btn_light_gray'
                     page='https://open.spotify.com/'
 
                 />
@@ -49,7 +50,8 @@ const NavBar = () => {
                     type='button'
                     title='youtube'
                     icon='/yt.png'
-                    variant='btn_dark_gray'
+                    animatedIcon='/yt_gray.gif'
+                    variant='btn_light_gray'
                     page='https://www.youtube.com/'
 
                 />
@@ -57,16 +59,9 @@ const NavBar = () => {
                     type='button'
                     title='instagram'
                     icon='/insta.png'
-                    variant='btn_dark_gray'
+                    animatedIcon='/insta_gray.gif'
+                    variant='btn_light_gray'
                     page='https://www.instagram.com/jordan.cobos/'
-
-                />
-                <Button 
-                    type='button'
-                    title='discord'
-                    icon='/discord.png'
-                    variant='btn_dark_gray'
-                    page='https://discord.com/'
 
                 />
             </div>
@@ -85,7 +80,7 @@ const NavBar = () => {
             </div>
 
         </nav>
-    </>
+    </div>
   )
 }
 
