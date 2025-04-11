@@ -4,6 +4,7 @@ import { useState, useRef } from "react";
 import { NAV_BAR_LINKS } from "@/constants";
 import Link from "next/link";
 import NavBar from "./NavBar";
+import Image from 'next/image';
 
 
 export default function VideoPlayer() {
@@ -35,18 +36,17 @@ export default function VideoPlayer() {
         { ended &&
             <>
                 <NavBar/>
-                <h4 onClick={handleReplay} className="text-white text-sm font-bold absolute bottom-5 right-5 hover:font-extrabold">Replay</h4>
-                <h2 className="text-white text-9xl absolute font-bold bottom-20 left-20 ">Jordan Cobos</h2>
-                {/* <nav className="absolute top-1/2 right-1/2">
+                <Image src='/replay.png' alt="replay button" onClick={handleReplay} width={100} height={100} style={{width: '2%', height: 'auto'}} className="absolute bottom-5 right-5"/>
+                <nav className="absolute top-1/2 self-center">
                     <ul className='hidden h-full gap-12 lg:flex'>
                             {NAV_BAR_LINKS.map((link) => (
-                                <Link href={link.href} key={link.key} className='text-4xl text-white flexCenter 
+                                <Link href={link.href} key={link.key} scroll={true} className='text-4xl text-white flexCenter 
                                 cursor-pointer pb-1.5 transition-all hover:font-bold py-10'>
                                     {link.label}
                                 </Link>
                             ))}
                     </ul>
-                </nav> */}
+                </nav>
             </>
             
         }

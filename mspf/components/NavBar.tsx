@@ -27,14 +27,16 @@ const NavBar = () => {
                 <Image src="/JC-Guitar-Logo.png" alt="logo" width={200} height={75}/>
                 
             </Link>
-            <ul className=' hidden h-full gap-12 lg:flex'>
+            {/* <ul className=' hidden h-full gap-12 lg:flex'>
                     {NAV_BAR_LINKS.map((link) => (
                         <Link href={link.href} key={link.key} className='text-4xl text-white flexCenter 
                         cursor-pointer pb-1.5 transition-all hover:font-bold py-10'>
                             {link.label}
                         </Link>
                     ))}
-            </ul>
+            </ul> */}
+
+            <h2 className='text-white text-9xl mr-10'>Jordan Cobos</h2>
 
             <div className='lg:flexCenter gap-2 hidden'>
                 <Button 

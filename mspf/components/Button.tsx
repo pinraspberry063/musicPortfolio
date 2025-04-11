@@ -30,7 +30,7 @@ const Button = ({type, title, icon, animatedIcon, variant, full, page}: ButtonPr
             onClick={handleClick}
             >
             {icon && !animated && <Image src={icon} alt={title} width={24} height={24}/> }
-            {animatedIcon && animated && <Image src={animatedIcon} alt={title} width={24} height={24}/> }
+            {animatedIcon && animated && <Image src={animatedIcon} alt={title} width={24} height={24} unoptimized/> }
         </button>
     )
 }

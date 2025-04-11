@@ -3,7 +3,14 @@ import React, { useRef, useState, useEffect } from "react";
 import { FiPlayCircle , FiPauseCircle  } from "react-icons/fi";
 import Image from "next/image";
 
-const Player = () => {
+type SongProps = {
+  audio: string;
+  title: string;
+  desc?: string;
+  pos?: string;
+}
+
+const Player = ({audio, title, desc, pos = "right"}: SongProps) => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const progressRef = useRef<HTMLInputElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -46,17 +53,26 @@ const Player = () => {
   };
 
   return (
-    <div className="flex items-center space-x-4 p-4 border-2 rounded-lg w-full max-w-lg py-10 px-10">
-      {/* Album Art */}
-      <Image src="/blue.jpg" alt="Song Thumbnail" width={80} height={80} className="rounded-lg" />
+    <div className="flex items-center bg-gray-90 space-x-4 w-1/2 h-1/4 pt-50 px-10">
+
 
       <div className="flex flex-col flex-grow">
-        {/* Title and Controls */}
-        <div className="flex items-center space-x-3">
+        {/* Controls */}
+        <div className="flex flex-row w-full justify-center space-x-8 mb-5">
+          <Image onClick={() =>  {
+            if (!audioRef.current) return;
+            audioRef.current.currentTime = audioRef.current.currentTime-5;
+          }} 
+            src={'/rewind.png'} alt={'rewind'} width={50} height={50}/>
           <button onClick={togglePlay} className="text-xl">
-            {isPlaying ? <FiPauseCircle /> : <FiPlayCircle />}
+            {isPlaying ? <FiPauseCircle size={50} color="white"/> : <FiPlayCircle size={50} color="white"/>}
           </button>
-          <span className="text-lg font-semibold">Title</span>
+          <Image onClick={() =>  {
+            if (!audioRef.current) return;
+            audioRef.current.currentTime = audioRef.current.currentTime+5;
+          }}
+          src={'/forward.png'} alt={'forward'} width={50} height={50}/>
+          
         </div>
 
         {/* Progress Bar */}
@@ -67,10 +83,18 @@ const Player = () => {
           onChange={handleSeek}
           className="w-full mt-2"
         />
+
+        {/* Title */}
+        { pos == "left" &&  <span className="text-4xl font-semibold self-end pt-5 text-white">{title}</span> }
+        { pos == "right" &&  <span className="text-4xl font-semibold pt-5 text-white">{title}</span> }
+       
+        
       </div>
 
+      
+
       {/* Audio Element (Hidden) */}
-      <audio ref={audioRef} src="/jm.mp3" />
+      <audio ref={audioRef} src={audio} />
     </div>
   );
 };
