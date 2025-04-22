@@ -36,12 +36,13 @@ export default function VideoPlayer() {
         { ended &&
             <>
                 <NavBar/>
+                <h2 className='absolute self-center top-96 text-white text-9xl'>Jordan Cobos</h2>
                 <Image src='/replay.png' alt="replay button" onClick={handleReplay} width={100} height={100} style={{width: '2%', height: 'auto'}} className="absolute bottom-5 right-5"/>
                 <nav className="absolute top-1/2 self-center">
                     <ul className='hidden h-full gap-12 lg:flex'>
                             {NAV_BAR_LINKS.map((link) => (
                                 <Link href={link.href} key={link.key} scroll={true} className='text-4xl text-white flexCenter 
-                                cursor-pointer pb-1.5 transition-all hover:font-bold py-10'>
+                                cursor-pointer pb-1.5 transition-all duration-300 ease-in hover:font-bold py-10'>
                                     {link.label}
                                 </Link>
                             ))}

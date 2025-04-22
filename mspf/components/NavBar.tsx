@@ -36,8 +36,6 @@ const NavBar = () => {
                     ))}
             </ul> */}
 
-            <h2 className='text-white text-9xl mr-10'>Jordan Cobos</h2>
-
             <div className='lg:flexCenter gap-2 hidden'>
                 <Button 
                     type='button'
