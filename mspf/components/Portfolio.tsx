@@ -21,7 +21,7 @@ function Portfolio() {
 
   return (
     <div className="flex flex-col bg-gray-50 w-full items-center justify-items-center">
-            <h1 className=" text-white font-bold text-9xl self-center mb-10">Projects</h1>
+            <h1 className=" text-white font-bold text-9xl md:text-8xl sm:text-8xl self-center my-10 mx-28">Projects</h1>
             
             <h2 className="text-gray-20 text-4xl text-center m-10">The following tracks were fully engineered and produced by myself as part of my Music Industry Studies: </h2>
             <h2 className="text-gray-20 text-4xl text-center mb-32 m-10">Senior Capstone Project at Lousisiana Tech University.</h2>
@@ -34,7 +34,7 @@ function Portfolio() {
                         <div key={song.key} className="flex flex-row w-full h-lvh">
                                 {index % 2 === 0 ? (
                                 <>
-                                    <div className='flex flex-col bg-gray-90 w-4/5 h-3/5 text-white items-center justify-end'>
+                                    <div className='flex flex-col bg-gray-90 w-4/5 h-2/5 text-white items-center justify-end'>
                                         <Player audio={song.audio} title={song.title} pos={"left"}/>
                                         {/* <h1 className="text-8xl m-10">{song.title}</h1> */}
 
@@ -54,7 +54,7 @@ function Portfolio() {
                                 </>
                                 ) : (
                                 <>
-                                    <div className='flex flex-col bg-gray-90 w-4/5 h-3/5 text-white items-center justify-end ml-auto'>
+                                    <div className='flex flex-col bg-gray-90 w-4/5 h-2/5 text-white items-center justify-end ml-auto'>
                                         <Player audio={song.audio} title={song.title} pos={"right"}/>
                                         {/* <h1 className="text-8xl m-10">{song.title}</h1> */}
 

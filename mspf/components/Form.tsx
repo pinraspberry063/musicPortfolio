@@ -28,8 +28,8 @@ function Form() {
       };
 
   return (
-    <div className="w-full h-screen bg-black flex items-center justify-center">
-      <form className="w-full max-w-6xl" onSubmit={handleMessage}>
+    <div className="w-full h-screen bg-black flex items-center justify-center p-10">
+      <form className="w-auto max-w-6xl" onSubmit={handleMessage}>
         <h2 className="text-white text-6xl font-semibold mb-6">Let's get in touch</h2>
 
         <label className="block text-zinc-300 mb-1">Name</label>

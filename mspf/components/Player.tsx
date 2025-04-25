@@ -54,8 +54,7 @@ const Player = ({audio, title, desc, pos = "right"}: SongProps) => {
   };
 
   return (
-    <div className="flex items-center bg-gray-90 space-x-4 w-4/5 h-4/5 pt-50 px-10">
-
+    <div className="flex flex-col md:flex-row items-center justify-between bg-gray-90 rounded-lg p-4 sm:p-6 md:p-10 gap-6 w-full max-w-[1200px] mx-auto">
 
       <div className="flex flex-col flex-grow">
         {/* Controls */}
@@ -86,8 +85,8 @@ const Player = ({audio, title, desc, pos = "right"}: SongProps) => {
         />
 
         {/* Title */}
-        { pos == "left" &&  <h2 className="text-8xl font-semibold self-end mt-40 text-white">{title}</h2> }
-        { pos == "right" &&  <h2 className="text-8xl font-semibold mt-40 text-white">{title}</h2> }
+        { pos == "left" &&  <h2 className="text-2xl sm:text-4xl md:text-6xl lg:text-8xl font-semibold mt-10 text-white text-center md:text-left">{title}</h2> }
+        { pos == "right" &&   <h2 className="text-2xl sm:text-4xl md:text-6xl lg:text-8xl font-semibold mt-10 text-white text-center md:text-right">{title}</h2> }
        
         
       </div>
