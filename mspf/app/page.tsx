@@ -22,9 +22,6 @@ export default function Home() {
         </section>
         <div className="h-96 bg-gradient-to-b from-gray-50 to-gray-90" />
         <section id="resume" className="bg-gray-90">
-          <div className="flex w-full items-end justify-end pr-80 pt-36 text-4xl">
-            <a href="/Resume.pdf" className="text-white bg-gray-90" download><img src="/download.png" alt="Download Resume" width={50} height={50}/> </a>
-          </div>
           <Resume/>
         </section>
         <div className="h-dvh bg-gradient-to-b from-gray-90 to-black" />
