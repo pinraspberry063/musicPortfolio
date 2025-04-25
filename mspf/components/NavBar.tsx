@@ -24,7 +24,7 @@ const NavBar = () => {
         <nav className='flex items-center justify-between w-full'>
             
             <Link href="/">
-                <Image src="/JC-Guitar-Logo.png" alt="logo" width={200} height={75}/>
+                <Image src="JC-Guitar-Logo.png" alt="logo" width={200} height={75}/>
                 
             </Link>
             {/* <ul className=' hidden h-full gap-12 lg:flex'>
@@ -40,7 +40,7 @@ const NavBar = () => {
                 <Button 
                     type='button'
                     title='spotify'
-                    icon='/spotify.png'
+                    icon='spotify.png'
                     animatedIcon='/spot_gray.gif'
                     variant='btn_light_gray'
                     page='https://open.spotify.com/'
@@ -49,7 +49,7 @@ const NavBar = () => {
                 <Button 
                     type='button'
                     title='youtube'
-                    icon='/yt.png'
+                    icon='yt.png'
                     animatedIcon='/yt_gray.gif'
                     variant='btn_light_gray'
                     page='https://www.youtube.com/'
@@ -58,7 +58,7 @@ const NavBar = () => {
                 <Button 
                     type='button'
                     title='instagram'
-                    icon='/insta.png'
+                    icon='insta.png'
                     animatedIcon='/insta_gray.gif'
                     variant='btn_light_gray'
                     page='https://www.instagram.com/jordan.cobos/'

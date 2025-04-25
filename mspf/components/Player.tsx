@@ -64,7 +64,7 @@ const Player = ({audio, title, desc, pos = "right"}: SongProps) => {
             if (!audioRef.current) return;
             audioRef.current.currentTime = audioRef.current.currentTime-5;
           }} 
-            src={'/rewind.png'} alt={'rewind'} width={50} height={50}/>
+            src={'rewind.png'} alt={'rewind'} width={50} height={50}/>
           <button onClick={togglePlay} className="text-xl">
             {isPlaying ? <FiPauseCircle size={50} color="white"/> : <FiPlayCircle size={50} color="white"/>}
           </button>
@@ -72,7 +72,7 @@ const Player = ({audio, title, desc, pos = "right"}: SongProps) => {
             if (!audioRef.current) return;
             audioRef.current.currentTime = audioRef.current.currentTime+5;
           }}
-          src={'/forward.png'} alt={'forward'} width={50} height={50}/>
+          src={'forward.png'} alt={'forward'} width={50} height={50}/>
           
         </div>
 
