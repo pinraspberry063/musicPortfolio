@@ -60,19 +60,19 @@ const Player = ({audio, title, desc, pos = "right"}: SongProps) => {
       <div className="flex flex-col flex-grow">
         {/* Controls */}
         <div className="flex flex-row w-full justify-center space-x-8 mb-5">
-          <Image onClick={() =>  {
+          <img onClick={() =>  {
             if (!audioRef.current) return;
             audioRef.current.currentTime = audioRef.current.currentTime-5;
           }} 
-            src={'rewind.png'} alt={'rewind'} width={50} height={50}/>
+            src={'/rewind.png'} alt={'rewind'} width={50} height={50}/>
           <button onClick={togglePlay} className="text-xl">
             {isPlaying ? <FiPauseCircle size={50} color="white"/> : <FiPlayCircle size={50} color="white"/>}
           </button>
-          <Image onClick={() =>  {
+          <img onClick={() =>  {
             if (!audioRef.current) return;
             audioRef.current.currentTime = audioRef.current.currentTime+5;
           }}
-          src={'forward.png'} alt={'forward'} width={50} height={50}/>
+          src={'/forward.png'} alt={'forward'} width={50} height={50}/>
           
         </div>
 
