@@ -86,8 +86,8 @@ const Player = ({audio, title, desc, pos = "right"}: SongProps) => {
         />
 
         {/* Title */}
-        { pos == "left" &&  <span className="text-8xl font-semibold self-end mt-40 text-white">{title}</span> }
-        { pos == "right" &&  <span className="text-8xl font-semibold mt-40 text-white">{title}</span> }
+        { pos == "left" &&  <h2 className="text-8xl font-semibold self-end mt-40 text-white">{title}</h2> }
+        { pos == "right" &&  <h2 className="text-8xl font-semibold mt-40 text-white">{title}</h2> }
        
         
       </div>

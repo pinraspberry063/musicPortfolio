@@ -56,7 +56,7 @@ export default function VideoPlayer() {
         { ended &&
             <>
                 <NavBar/>
-                <h2 className='self-center top-96 text-white text-9xl'>Jordan Cobos</h2>
+                <h2 className='self-center top-96 text-white text-9xl m-20'>Jordan Cobos</h2>
                 <img src='/replay.png' alt="replay button" onClick={handleReplay} width={100} height={100} style={{width: '2%', height: 'auto'}} className="absolute bottom-5 right-5"/>
                 <nav className="mt-20 self-center">
                     <ul className='hidden h-full gap-12 lg:flex'>

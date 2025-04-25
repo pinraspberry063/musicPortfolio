@@ -1,6 +1,7 @@
 import React from 'react'
 import { NAV_BAR_LINKS } from '@/constants';
 import Link from 'next/link';
+import Button from './Button';
 
 const Menu = () => {
   return (
@@ -13,7 +14,37 @@ const Menu = () => {
                     {link.label}
                 </Link>
             ))}
+
         </ul>
+        <div className="flex flex-row gap-2 mt-5 w-full">
+                <Button 
+                    type='button'
+                    title='spotify'
+                    icon='/spotify.png'
+                    animatedIcon='/spot_gray.gif'
+                    variant='btn_light_gray'
+                    page='https://open.spotify.com/'
+
+                />
+                <Button 
+                    type='button'
+                    title='youtube'
+                    icon='/yt.png'
+                    animatedIcon='/yt_gray.gif'
+                    variant='btn_light_gray'
+                    page='https://www.youtube.com/'
+
+                />
+                <Button 
+                    type='button'
+                    title='instagram'
+                    icon='/insta.png'
+                    animatedIcon='/insta_gray.gif'
+                    variant='btn_light_gray'
+                    page='https://www.instagram.com/jordan.cobos/'
+
+                />
+          </div>
     </nav>
   )
 }

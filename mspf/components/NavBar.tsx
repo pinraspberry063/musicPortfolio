@@ -24,7 +24,7 @@ const NavBar = () => {
         <nav className='flex items-center justify-between w-full'>
             
             <Link href="/">
-                <img src="/JC-Guitar-Logo.png" alt="logo" width={200} height={75}/>
+                <img src="/JC-Guitar-Logo.png" alt="logo" width={200} height={75}  className="w-[120px] sm:w-[160px] md:w-[200px] h-auto"/>
                 
             </Link>
             {/* <ul className=' hidden h-full gap-12 lg:flex'>
