@@ -19,7 +19,7 @@ const NavBar = () => {
     }
     
   return (
-    <div className='flex flex-row w-full absolute px-20'>
+    <div className='flex flex-row w-full absolute px-20 top-5'>
         
         <nav className='flex items-center justify-between w-full'>
             

@@ -21,7 +21,11 @@ function Portfolio() {
 
   return (
     <div className="flex flex-col bg-gray-50 w-full items-center justify-items-center">
-            <h1 className=" text-white font-bold text-9xl self-center mb-40">Projects</h1>
+            <h1 className=" text-white font-bold text-9xl self-center mb-10">Projects</h1>
+            
+            <h2 className="text-gray-20 text-4xl">The following tracks were fully engineered and produced by myself as part of my Music Industry Studies: </h2>
+            <h2 className="text-gray-20 text-4xl mb-32">Senior Capstone Project at Lousisiana Tech University.</h2>
+          
             { PORTFOLIO_PLAYLIST.map((song, index) => {
                 const isVisible = visibleItems[index];
                 const transitionClasses = "transition-transform duration-700 ease-in-out";
