@@ -2,6 +2,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { FiPlayCircle , FiPauseCircle  } from "react-icons/fi";
 import Image from "next/image";
+import Disk from "./Disk";
 
 type SongProps = {
   audio: string;
@@ -53,7 +54,7 @@ const Player = ({audio, title, desc, pos = "right"}: SongProps) => {
   };
 
   return (
-    <div className="flex items-center bg-gray-90 space-x-4 w-1/2 h-1/4 pt-50 px-10">
+    <div className="flex items-center bg-gray-90 space-x-4 w-4/5 h-4/5 pt-50 px-10">
 
 
       <div className="flex flex-col flex-grow">
@@ -85,8 +86,8 @@ const Player = ({audio, title, desc, pos = "right"}: SongProps) => {
         />
 
         {/* Title */}
-        { pos == "left" &&  <span className="text-4xl font-semibold self-end pt-5 text-white">{title}</span> }
-        { pos == "right" &&  <span className="text-4xl font-semibold pt-5 text-white">{title}</span> }
+        { pos == "left" &&  <span className="text-8xl font-semibold self-end mt-40 text-white">{title}</span> }
+        { pos == "right" &&  <span className="text-8xl font-semibold mt-40 text-white">{title}</span> }
        
         
       </div>

@@ -6,8 +6,8 @@ export const NAV_BAR_LINKS = [
 ];
 
 export const PORTFOLIO_PLAYLIST = [
-    { title: 'SONG ONE', key: 'song1', photo: '/blue.jpg', audio: '/jm.mp3' },
-    { title: 'Song two', key: 'song2', photo: '/red.jpg', audio: '/jm.mp3' },
-    { title: 'song three', key: 'song3', photo: '/yellow.jpg', audio: '/jm.mp3' },
+    { title: 'In Your Atmosphere', key: 'song1', photo: '/blue.jpg', audio: '/In_Your_Atmosphere.wav' },
+    { title: 'Texas', key: 'song2', photo: '/red.jpg', audio: '/Texas.wav' },
+    { title: 'Pink + White', key: 'song3', photo: '/yellow.jpg', audio: '/Pink_+_White.wav' },
 
 ];
