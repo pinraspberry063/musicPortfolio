@@ -10,6 +10,19 @@
   box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+  video {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 768px) {
+  video {
+    height: 100vh;
+  }
+}
+
+
 @font-face {
   font-family: 'Faustina';
   src: url('/Faustina.ttf') format('truetype');

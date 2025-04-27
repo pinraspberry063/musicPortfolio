@@ -39,18 +39,20 @@ export default function VideoPlayer() {
   }
 
   return (
-    <div className="relative w-full h-auto">
+    <div className="relative min-w-56 w-full min-h-screen overflow-hidden">
     
     
     <video
-      ref={videoRef}
-      src="/guitar_clip_full.mp4"
-      autoPlay
-      muted
-      className={`w-full h-screen object-cover transition-all duration-500 ${blurred ? 'blur-md' : ''}`}
-      onEnded={() => {setEnded(true)}}
-      onClick={handleEndVideo}
-    /> 
+    ref={videoRef}
+    src="/guitar_clip_full.mp4"
+    autoPlay
+    muted
+    playsInline
+    className={`w-full min-h-screen object-cover transition-all duration-500 ${blurred ? 'blur-md' : ''}`}
+    onEnded={() => {setEnded(true)}}
+    onClick={handleEndVideo}
+  /> 
+
      
         <div className={`absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-40 transition-opacity duration-1000 ease-linear ${ ended ? 'opacity-80 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
         { ended &&
