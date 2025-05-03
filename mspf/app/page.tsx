@@ -15,16 +15,16 @@ export default function Home() {
         <section id="bio">
           <Bio/>
         </section>
-        <div className="h-96 bg-gradient-to-b from-gray-70 to-gray-50" />
+        <div className="h-96 sm:h-36 md:h-56 lg:h-96 bg-gradient-to-b from-gray-70 to-gray-50" />
         <section id="portfolio">
           <Portfolio/>
 
         </section>
-        <div className="h-96 bg-gradient-to-b from-gray-50 to-gray-90" />
+        <div className="h-96 sm:h-36 md:h-56 lg:h-96 bg-gradient-to-b from-gray-50 to-gray-90" />
         <section id="resume" className="bg-gray-90">
           <Resume/>
         </section>
-        <div className="h-dvh bg-gradient-to-b from-gray-90 to-black" />
+        <div className="h-96 sm:h-36 md:h-56lg:h-96 bg-gradient-to-b from-gray-90 to-black" />
         <section id="contact">
           <div className="h-screen w-full bg-black">
             <Form/>
