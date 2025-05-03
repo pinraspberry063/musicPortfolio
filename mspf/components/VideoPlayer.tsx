@@ -58,8 +58,9 @@ export default function VideoPlayer() {
         { ended &&
             <>
                 <NavBar/>
-                <h2 className='self-center text-white text-8xl m-20'>Jordan Cobos</h2>
-                <img src='/replay.png' alt="replay button" onClick={handleReplay} width={100} height={100} style={{width: 'auto', height: 'auto'}} className="absolute bottom-5 right-5"/>
+                <h2 className='self-center text-white text-5xl sm:text-6xl md:text-8xl lg:text-9xl mx-15 mb-5'>Jordan Cobos</h2>
+                <h3 className='self-center text-white text-3xl sm:text-3xl md:text-4xl lg:hidden'>Portfolio</h3>
+                <img src='/replay.png' alt="replay button" onClick={handleReplay} width={100} height={100} className="absolute bottom-5 right-5 w-10 sm:w-10 md:w-20 lg:w-30"/>
                 <nav className="mt-10 self-center">
                     <ul className='hidden h-full gap-12 lg:flex'>
                             {NAV_BAR_LINKS.map((link) => (
