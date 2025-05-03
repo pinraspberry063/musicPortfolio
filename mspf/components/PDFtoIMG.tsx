@@ -87,9 +87,9 @@ export default function PdfToImage({ pdfUrl }: Props) {
     <div>
       <canvas 
         ref={canvasRef} 
-        style={{ display: 'none' }} />
+        style={{ display: 'none'}} />
       {imageDataUrl ? (
-        <img src={imageDataUrl} alt="PDF Snapshot" />
+        <img src={imageDataUrl} alt="PDF Snapshot" width={'auto'} height={'auto'}/>
       ) : (
         <p>Loading PDF...</p>
       )}
